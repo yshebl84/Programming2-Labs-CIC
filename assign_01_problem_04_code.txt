@@ -1,0 +1,75 @@
+#include <iostream>
+
+using namespace std;
+
+int main(){
+
+int n1, n2, n3, A, B, C;
+
+cin >>A >>B >>C;
+
+if(A > B && A > C){
+
+n1 = A;
+
+}
+
+else if(B > A && B > C){
+
+n1 = B;
+
+}
+
+else if(C > A && C > B){
+
+n1 = C;
+
+}
+
+
+if(A < B && A < C){
+
+n3 = A;
+
+}
+
+else if(B < A && B < C){
+
+n3 = B;
+
+}
+
+else if(C < A && C < B){
+
+n3 = C;
+
+}
+
+
+if( n1 != A && n3!= A ){
+ n2 = A;
+
+}
+
+else if( n1 != B && n3!= B ){
+
+n2 = B;
+
+}
+
+else if( n1 != C && n3!= C ){
+
+n2 = C;
+
+}
+cout<<endl;
+cout<<endl<<n3<<endl<<n2<<endl<<n1<<endl;
+cout<<endl;
+cout<<A<<endl;
+cout<<B<<endl;
+cout<<C<<endl;
+
+
+return 0;
+
+}
